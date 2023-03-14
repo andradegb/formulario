@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Picolé</title>
+
+    <style>
+        
+        .texto
+        {
+            width: 90%;
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <fieldset>
+        <legend> Dados Pessoais </legend>
+        Nome: 
+        <input type="text" class="caixa_larga" id="nome">
+        <br>  <br>
+        Endereço:
+        <input type="text" class="caixa_larga" id="endereco">
+        <br>  <br>
+        Cidade:
+        <input type="text" class="caixa_larga" id="cidade">
+        <br>  <br>
+        Estado:
+        <select id="estado" class="estado">
+            <option>São Paulo</option>
+            <option>Paraná</option>
+        </select>
+
+    </fieldset>
+
+
+    <br> <br>
+
+
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+        Natureza do Cargo:
+        <br>  <br>
+        <input type="radio" class="gargos" id="gerencia" name="cargos">
+        Gerência
+        <input type="radio" class="gargos" id="financeiro" name="cargos">
+        Financeiro
+        <input type="radio" class="gargos" id="recepcao" name="cargos">
+        Recepção
+        <input type="radio" class="gargos" id="administrativo" name="cargos">
+        Administrativo
+        <input type="radio" class="gargos" id="juridico" name="cargos">
+        Jurídico
+        <br>  <br>
+        Área de interesse:
+        <br>
+        <input type="checkbox" class="areas" id="computacao"> Computação
+        <input type="checkbox" class="areas" id="biologia"> Biologia
+        <input type="checkbox" class="areas" id="meio ambiente"> Meio Ambiente
+        <input type="checkbox" class="areas" id="engenharia"> Engenharia
+        <input type="checkbox" class="areas" id="historia"> História
+        <br> <br>
+        Mini-curriculo:
+        <br>
+        <textarea class="texto" id="curriculo"></textarea>
+        </select>
+
+    </fieldset>
+
+    <button>ENVIAR</button>
+    <button>LIMPAR</button>
+
+</body>
+</html>
